@@ -1,0 +1,61 @@
+.resource-table{
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    grid-template-areas: 
+    'table'
+    'pagination';
+    gap: 1rem;
+}
+
+.resource-table table{
+    grid-area: table;
+}
+
+.resource-table nav.pagination{
+    width: 100%;
+    height: 85%;
+    border-radius: var(--border-radius-3);
+    grid-area: pagination;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white);
+}
+
+.pagination .pagination-items{
+    display: flex;
+    height:30px;
+}
+.pagination-items li{
+    margin: 0 5px;
+    height: 30px;
+    display: flex;
+}
+.pagination-items li button{
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; 
+    border: 1px solid var(--clr-dark);
+    color: #333; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pagination-items li:first-child,
+.pagination-items li:last-child{
+    height: 100%;
+    
+}
+
+
+main.views-container table tbody td[data='status'] div {
+    height: 2.5rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: var(--border-radius-3);
+    font-weight: bold;
+}

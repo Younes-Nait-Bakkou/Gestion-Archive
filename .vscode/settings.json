@@ -1,0 +1,37 @@
+{
+    "liveServer.settings.port": 5501,
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "server",
+            "commands": ["cd backend", "php artisan serve"]
+          },
+          {
+            "name": "client",
+            "commands": ["cd frontend", "npm start"]
+          },
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "artisan",
+            "commands": ["cd backend"]
+          },
+          {
+            "name": "npm",
+            "commands": ["cd frontend"]
+          },
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "mysql",
+            "commands": ["mysql -u root -p"]
+          }
+        ]
+      }
+    ]  
+}

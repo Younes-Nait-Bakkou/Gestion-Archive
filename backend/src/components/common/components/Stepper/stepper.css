@@ -1,0 +1,81 @@
+.stepper {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    row-gap: 0.5rem;
+}
+  
+.steps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    justify-self: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.step.active .step-icon,
+.step.complete .step-icon {
+    background-color: #4caf50;
+    color: white;
+}
+
+.step .step-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.step .step-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.stepper-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+    align-self: center;
+}
+
+.stepper-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 3rem;
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius-1);
+}
+
+.stepper-buttons button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
