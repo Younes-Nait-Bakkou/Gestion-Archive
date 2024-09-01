@@ -12,7 +12,7 @@
 
 ## Technology Stack
 
-- **Front-end:** React, Tailwind CSS
+- **Front-end:** React, CSS
 - **Back-end:** Laravel, MySQL
 - **APIs:** RESTful APIs for communication between the front-end and back-end
 - **Authentication:** Laravel Sanctum for secure authentication
