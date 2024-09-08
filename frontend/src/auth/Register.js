@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Cookies from "js-cookie";
 import './auth.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { axiosAuth } from '../layouts/admin/AdminLayout';
 
 export default function Register() {
@@ -89,6 +89,7 @@ export default function Register() {
             />
           </div>
           <button type="submit"> Sign Up</button>
+          <h4 style={{marginTop:"15px"}}>Already have an account ? <Link to="/login">Log in</Link></h4>
         </form>
       </div>
     </div>
