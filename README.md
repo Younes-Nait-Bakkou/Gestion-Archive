@@ -5,10 +5,11 @@
 ## Features
 
 - 🗂️ **Archive Management:** Efficiently manage and organize the archives of EFMs.
-- 🔍 **Search and Filter:** Quickly find specific EFMs using search and filter options.
-- 📊 **Status Tracking:** Monitor the status of EFMs, including submission, grading, and approval stages.
-- 🔒 **Secure Access:** Role-based access control to ensure that only authorized personnel can manage and view EFM archives.
-- 📅 **Dashboard:** Overview of recent EFMs, upcoming deadlines, and archive statistics.
+- 🔍 **Search and Filter:** Quickly find specific EFMs using search and filter options. -- Paused --
+- 📊 **Status Tracking:** Monitor the status of EFMs, including submission, grading, and approval stages. 
+- 🔒 **Secure Access:** Role-based access control to ensure that only authorized personnel can manage and view EFM archives. -- Paused --
+- 📅 **Dashboard:** Overview of recent EFMs, upcoming deadlines, and archive statistics. 
+- 🛠️ **Advanced Reporting:** Generate detailed reports on EFM data. -- Not Yet Implemented --
 
 ## Technology Stack
 
